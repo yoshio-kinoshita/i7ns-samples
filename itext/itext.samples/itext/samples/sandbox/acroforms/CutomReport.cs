@@ -1,5 +1,6 @@
 ﻿using iText.IO.Font;
 using iText.Kernel.Font;
+using iText.Kernel.Geom;
 using iText.Kernel.Pdf;
 using iText.Layout;
 using iText.Layout.Element;
@@ -35,6 +36,20 @@ namespace itext.samples.itext.samples.sandbox.acroforms
             Document doc = new Document(pdfDoc);
 
             PdfFont font = PdfFontFactory.CreateFont(FONT, PdfEncodings.IDENTITY_H);
+
+            // 1ページ目を取得
+            PdfPage page = pdfDoc.GetPage(1);
+
+            // ページのサイズを取得
+            Rectangle pageSize = page.GetPageSize();
+
+            // 幅と高さを取得
+            float width = pageSize.GetWidth();
+            float height = pageSize.GetHeight();
+
+            // 幅と高さを表示
+            Console.WriteLine($"Width: {width}");
+            Console.WriteLine($"Height: {height}");
 
             doc.SetFont(font);
 
