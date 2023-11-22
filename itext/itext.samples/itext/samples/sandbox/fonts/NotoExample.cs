@@ -18,10 +18,11 @@ namespace iText.Samples.Sandbox.Fonts
          * "These are the protagonists in 'Hero', a movie by Zhang Yimou:
          * 無名 (Nameless), 殘劍 (Broken Sword), 飛雪 (Flying Snow), 如月 (Moon), 秦王 (the King), and 長空 (Sky)."
          */
-        public static readonly String TEXT = "These are the protagonists in 'Hero', a movie by Zhang Yimou:\n"
-                                             + "\u7121\u540d (Nameless), \u6b98\u528d (Broken Sword), "
-                                             + "\u98db\u96ea (Flying Snow), \u5982\u6708 (Moon), "
-                                             + "\u79e6\u738b (the King), and \u9577\u7a7a (Sky).";
+        //public static readonly String TEXT = "These are the protagonists in 'Hero', a movie by Zhang Yimou:\n"
+        //                                     + "\u7121\u540d (Nameless), \u6b98\u528d (Broken Sword), "
+        //                                     + "\u98db\u96ea (Flying Snow), \u5982\u6708 (Moon), "
+        //                                     + "\u79e6\u738b (the King), and \u9577\u7a7a (Sky).";
+        public static readonly String TEXT = "test";
 
         // "十锊埋伏"
         public static readonly String CHINESE = "\u5341\u950a\u57cb\u4f0f";

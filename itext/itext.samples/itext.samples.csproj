@@ -6,16 +6,17 @@
     <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(TargetFramework)' == 'net461' ">
-    <OutputType>library</OutputType>
+    <OutputType>Exe</OutputType>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <ApplicationIcon />
     <OutputTypeEx>library</OutputTypeEx>
-    <StartupObject />
+    <StartupObject>itext.samples.itext.samples.sandbox.acroforms.CutomReport</StartupObject>
     <AssemblyName>itext.samples</AssemblyName>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="itext7.pdfcalligraph" Version="4.0.2" />
     <PackageReference Include="TeamCity.VSTest.TestAdapter" Version="1.0.0" />
     <PackageReference Include="NUnit" Version="3.7.1" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.8.0" />
@@ -67,5 +68,8 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System.IO" Condition="'$(TargetFramework)' == 'net461'" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="cmpfiles\新しいフォルダー\" />
   </ItemGroup>
 </Project>
